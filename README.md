@@ -7,6 +7,8 @@
 
 > **Unified controls for stopwatch, timer, and audio recording**
 
+![Multi-Timer Studio Screenshot](https://res.cloudinary.com/dxowqxqtj/image/upload/v1753415460/multi-timer-audio-recorder/screenshot.png)
+
 Multi-Timer Studio is a web application that integrates stopwatch, countdown timer, and audio recording functionality. It provides unified controls to operate all features simultaneously, with session persistence and real-time waveform visualization.
 
 ## ✨ Key Features
