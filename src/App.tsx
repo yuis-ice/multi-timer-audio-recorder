@@ -166,6 +166,74 @@ function App() {
             isRunning={state.isRunning}
           />
         </div>
+
+        {/* Footer with GitHub Links */}
+        <footer className="mt-12 pt-8 border-t border-gray-300 text-center">
+          <div className="mb-6">
+            <h3 className="text-lg font-semibold text-gray-800 mb-3">Help us improve Multi-Timer Studio!</h3>
+            <p className="text-gray-600 mb-4">Your feedback and contributions make this project better for everyone.</p>
+            
+            <div className="flex flex-wrap items-center justify-center gap-4">
+              <a
+                href="https://github.com/yuis-ice/multi-timer-audio-recorder"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition-colors font-medium"
+              >
+                <Github size={18} />
+                View Source Code
+                <ExternalLink size={14} />
+              </a>
+              
+              <a
+                href="https://github.com/yuis-ice/multi-timer-audio-recorder/issues/new?template=feature_request.yml"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors font-medium"
+              >
+                <Star size={18} />
+                Request Feature
+                <ExternalLink size={14} />
+              </a>
+              
+              <a
+                href="https://github.com/yuis-ice/multi-timer-audio-recorder/issues/new?template=bug_report.yml"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-3 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors font-medium"
+              >
+                <MessageCircle size={18} />
+                Report Bug
+                <ExternalLink size={14} />
+              </a>
+            </div>
+          </div>
+          
+          <div className="text-sm text-gray-500">
+            <p className="mb-2">
+              Made with ❤️ by{' '}
+              <a
+                href="https://github.com/yuis-ice"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:text-blue-700 underline"
+              >
+                yuis-ice
+              </a>
+            </p>
+            <p>
+              Open source under{' '}
+              <a
+                href="https://github.com/yuis-ice/multi-timer-audio-recorder/blob/master/LICENSE"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:text-blue-700 underline"
+              >
+                MIT License
+              </a>
+            </p>
+          </div>
+        </footer>
       </div>
     </div>
   );
