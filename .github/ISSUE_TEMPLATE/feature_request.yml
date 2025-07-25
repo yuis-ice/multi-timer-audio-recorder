@@ -1,0 +1,185 @@
+name: ✨ Feature Request
+description: Suggest a new feature or enhancement for Multi-Timer Audio Recorder
+title: "[Feature]: "
+labels: ["enhancement", "needs-triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting a new feature! Please fill out this form to help us understand your request.
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Pre-submission Checklist
+      description: Please confirm you have completed these steps
+      options:
+        - label: I have searched existing issues and discussions to ensure this isn't a duplicate
+          required: true
+        - label: I have considered if this fits the project's scope and goals
+          required: true
+        - label: I have thought about potential implementation challenges
+          required: true
+
+  - type: dropdown
+    id: feature-type
+    attributes:
+      label: Feature Type
+      description: What type of feature are you requesting?
+      options:
+        - New functionality
+        - Enhancement to existing feature
+        - UI/UX improvement
+        - Performance optimization
+        - Accessibility improvement
+        - Integration/Export feature
+        - Developer experience
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Related Component
+      description: Which component would this feature affect?
+      options:
+        - Stopwatch
+        - Timer
+        - Audio Recorder
+        - Waveform Visualizer
+        - Unified Controls
+        - Data Persistence/Storage
+        - Export/Import functionality
+        - Settings/Configuration
+        - UI/Layout
+        - Multiple components
+        - New component
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: What problem does this feature solve? What need does it address?
+      placeholder: |
+        Describe the problem or limitation you're experiencing.
+        For example: "When recording long sessions, I need to..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe your ideal solution for this problem
+      placeholder: |
+        Describe what you'd like to see implemented.
+        Be specific about functionality, behavior, and user interaction.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternative Solutions
+      description: Have you considered any alternative approaches?
+      placeholder: |
+        Describe any alternative solutions or workarounds you've considered.
+        This helps us understand different approaches to the problem.
+
+  - type: textarea
+    id: use-cases
+    attributes:
+      label: Use Cases
+      description: Describe specific scenarios where this feature would be useful
+      placeholder: |
+        Example scenarios:
+        1. When conducting interviews...
+        2. During fitness workouts...
+        3. For cooking timing...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority Level
+      description: How important is this feature to you?
+      options:
+        - Nice to have
+        - Would be helpful
+        - Important for my workflow
+        - Critical/Blocking
+    validations:
+      required: true
+
+  - type: dropdown
+    id: complexity
+    attributes:
+      label: Implementation Complexity (Your Assessment)
+      description: How complex do you think this feature would be to implement?
+      options:
+        - Simple (minor UI change, small addition)
+        - Moderate (new component, moderate logic)
+        - Complex (significant changes, new architecture)
+        - I'm not sure
+
+  - type: textarea
+    id: technical-details
+    attributes:
+      label: Technical Details (Optional)
+      description: Any technical details, APIs, or implementation ideas?
+      placeholder: |
+        If you have technical knowledge, you can suggest:
+        - Specific APIs or libraries
+        - Implementation approaches
+        - Technical requirements
+        - Performance considerations
+
+  - type: textarea
+    id: mockups
+    attributes:
+      label: Mockups/Examples
+      description: Visual examples, mockups, or references to similar features
+      placeholder: |
+        - Screenshots of similar features in other apps
+        - Hand-drawn mockups
+        - Links to design references
+        - Detailed descriptions of the UI
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Contribution Intent
+      description: Would you be interested in contributing to this feature?
+      options:
+        - label: I would be willing to help implement this feature
+        - label: I would be willing to test this feature
+        - label: I would be willing to provide feedback during development
+        - label: I can provide design/mockups
+        - label: I can write documentation
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: |
+        Any other context, constraints, or considerations?
+        - Target audience
+        - Accessibility requirements
+        - Browser compatibility needs
+        - Performance requirements
+      placeholder: Add any other information that would be helpful
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Agreement
+      description: By submitting this feature request, you agree to follow our [Code of Conduct](../../blob/main/CONTRIBUTING.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
