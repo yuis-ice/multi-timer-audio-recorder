@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Play, Pause, RotateCcw } from 'lucide-react';
+import { Play, Pause, RotateCcw, Github, Star, MessageCircle, ExternalLink } from 'lucide-react';
 import Stopwatch from './components/Stopwatch';
 import Timer from './components/Timer';
 import AudioRecorder from './components/AudioRecorder';
@@ -104,10 +104,52 @@ function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 p-4">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-gray-800 mb-2">Multi-Timer Studio</h1>
-          <p className="text-gray-600">Unified controls for stopwatch, timer, and audio recording</p>
-        </div>
+        <header className="text-center mb-8">
+          <div className="flex items-center justify-center gap-4 mb-4">
+            <h1 className="text-4xl font-bold text-gray-800">Multi-Timer Studio</h1>
+            <a
+              href="https://github.com/yuis-ice/multi-timer-audio-recorder"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:text-gray-800 transition-colors"
+              title="View on GitHub"
+            >
+              <Github size={28} />
+            </a>
+          </div>
+          <p className="text-gray-600 mb-4">Unified controls for stopwatch, timer, and audio recording</p>
+          
+          {/* GitHub Action Buttons */}
+          <div className="flex flex-wrap items-center justify-center gap-3 text-sm">
+            <a
+              href="https://github.com/yuis-ice/multi-timer-audio-recorder"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition-colors"
+            >
+              <Star size={16} />
+              Star on GitHub
+            </a>
+            <a
+              href="https://github.com/yuis-ice/multi-timer-audio-recorder/issues"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+            >
+              <MessageCircle size={16} />
+              Report Issue
+            </a>
+            <a
+              href="https://github.com/yuis-ice/multi-timer-audio-recorder/discussions"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
+            >
+              <MessageCircle size={16} />
+              Discussions
+            </a>
+          </div>
+        </header>
 
         {/* Unified Controls */}
         <div className="bg-white rounded-xl shadow-lg p-6 mb-8">
